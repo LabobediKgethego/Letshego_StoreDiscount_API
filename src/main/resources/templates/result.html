@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Here Is Your Bill</title>
+</head>
+<body>
+
+
+<h1 th:text="${groceryBean.message()}"></h1>
+
+
+<p th:text="${#strings.arraySplit(groceryBean.youBought().toString(),';')} "></p>
+
+<ul th:each="values : ${groceryBean.getResults()}">
+    <li th:text="${values}"></li>
+</ul>
+<h4 th:text="${groceryBean.total()}"></h4>
+
+</body>
+</html>

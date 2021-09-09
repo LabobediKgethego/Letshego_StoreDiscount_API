@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome To Online Store</title>
+</head>
+<body>
+<form th:action="@{/result}" th:object="${GroceryBean}" method ="post">
+
+ <h1>Welcome To Online Store</h1>
+  Customer Username:<br>
+  <input type="text"  id = "customer_username" name="customer_username" required><br>
+  <input type="radio" id = "customer_type" name="customer_type" value="Employee">Store Employee Customer<br>
+  <input type="radio" id = "customer_type" name="customer_type" value="Affiliate" checked>Store Affiliate Customer<br>
+  <input type="radio" id = "customer_type" name="customer_type" value="Ordinary"> Ordinary Customer<br>
+  Customer Since  
+  <input type="date" id="customer_since" name="customer_since" required>
+  
+  
+  <br>
+  <h2>Buy Something</h2>
+  <h3>Grocery Dept.</h3>
+    <input type="checkbox" id="Bakery_and_Bread" name="Bakery_and_Bread" value="Bakery_and_Bread">
+	<label for="Bakery and Bread"> Bakery_and_Bread $195.00</label><br>
+	<input type="checkbox" id="Meat_and_Seafood" name="Meat_and_Seafood" value="Meat_and_Seafood">
+	<label for="Meat_and_Seafood"> Meat and Seafood $459.50</label><br>
+	<input type="checkbox" id="Pasta_and_Rice" name="Pasta_and_Rice" value="Pasta_and_Rice">
+	<label for="Pasta_and_Rice"> Pasta and Rice $250.95</label><br> 
+	<input type="checkbox" id="Oils_Sauces_Salad_Dressings_and_Condiment" name="Oils_Sauces_Salad_Dressings_and_Condiment" value="Oils_Sauces_Salad_Dressings_and_Condiment">
+	<label for="Oils_Sauces_Salad_Dressings_and_Condiment"> Oils, Sauces, Salad Dressings, and Condiment $2540.95</label><br><br><br> 
+  <h3>Appliances And Electronics Dept.</h3>
+    <input type="checkbox" id="Channel_Home_Theater_System" name="Channel_Home_Theater_System" value="Channel_Home_Theater_System">
+	<label for="Channel_Home_Theater_System"> 5.1 Channel Home Theater System $1195.00</label><br>
+	<input type="checkbox" id="Mirror_Microwave" name="Mirror_Microwave" value="Mirror_Microwave">
+	<label for="Mirror_Microwave"> Mirror Microwave $ 809.90</label><br>
+	<input type="checkbox" id="Slow_Cooker" name="Slow_Cooker" value="Slow_Cooker">
+	<label for="Slow_Cooker"> Slow Cooker $595.00</label><br>
+	<input type="checkbox" id="cc_Air_Conditioner" name="cc_Air_Conditioner" value="cc_Air_Conditioner">
+	<label for="cc_Air_Conditioner"> 48 cc Air Conditioner $7440.40</label><br>
+	 <input type="submit" value="Submit" name="Submit">
+</form> 
+
+</body>
+</html>

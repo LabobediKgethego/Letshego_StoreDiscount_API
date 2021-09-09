@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Online Store Bill Processing</title>
+</head>
+<body>
+
+ <form>
+ <h1>Online Store Bill Processing</h1>
+  Customer ID:<br>
+  <input type="text" name="customer_id"><br>
+  Net Payable:<br>
+  <input type="text" name="net_payable"><br>
+  <input type="radio" name="customer_type" value="Affiliate" checked>Store Affiliate<br>
+  <input type="radio" name="customer_type" value="Employee">Store Employee<br>
+  <input type="radio" name="customer_type" value="Ordinary"> Ordinary Customer
+</form> 
+<p th:text="{groceryBean.getOils_Sauces_Salad_Dressings_and_Condiment()}"></p>
+</body>
+</html>
